@@ -1725,6 +1725,8 @@ body.hidden {
   .docs__item-name {
     font-size: 14px;
     padding-top: 7px; }
+  .docs__item-icon img {
+    width: 40px; }
   .docs__list-num {
     min-width: 25px; }
     .docs__list-num img {

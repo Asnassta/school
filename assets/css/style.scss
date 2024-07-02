@@ -1648,6 +1648,11 @@ body.hidden {
 				font-size: 14px;
 				padding-top: 7px;
 			}
+			&-icon {
+				img {
+					width: 40px;
+				}
+			}
 		}
 		&__list {
 			&-num {
