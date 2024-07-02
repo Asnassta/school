@@ -1,0 +1,66 @@
+$ff: 'Sansation', sans-serif;
+$wh: #ffffff;
+$bl: #000;
+$purple: rgb(179, 144, 251);
+$d-purple: #150b28;
+$gray: rgb(238, 238, 238);
+$gray-b: rgba(238, 238, 238, 0.2);
+$b-purple: #413850;
+
+
+@mixin text-grad {
+	background: linear-gradient(90deg, #a2edfe 0%, #bf6dff 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin bg-blur {
+	background: rgba(19, 10, 36, 0.65);
+	backdrop-filter: blur(10px);
+}
+
+@mixin circle-purple {
+	content: "";
+	width: 55.5vw;
+	height: 83.3vw;
+	max-width: 800px;
+	max-height: 1200px;
+	filter: blur(500px);
+	background: rgb(161, 39, 168);
+	opacity: 0.2;
+	border-radius: 100%;
+	pointer-events: none;
+}
+
+@mixin circle-dark {
+	content: "";
+	width: 125vw;
+	height: 69.4vw;
+	max-height: 1000px;
+	filter: blur(400px);
+	background:  #030206;
+	opacity: 0.1;
+	border-radius: 100%;
+	pointer-events: none;
+}
+
+@mixin circle-blue {
+	content: "";
+	width: 55.5vw;
+	height: 83.3vw;
+	max-width: 800px;
+	max-height: 1200px;
+	filter: blur(500px);
+	background: rgb(57, 169, 204);;
+	opacity: 0.2;
+	border-radius: 100%;
+	pointer-events: none;
+}
+
+$maxWidth: 1920;
+@mixin adaptive-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
