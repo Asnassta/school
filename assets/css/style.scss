@@ -1431,6 +1431,14 @@ body.hidden {
 		}
 	}
 
+	.docs {
+		&__list {
+			li {
+				margin-bottom: 24px;
+			}
+		}
+	}
+
 	.vacancy {
 		&__inner {
 			display: block;
@@ -1582,6 +1590,14 @@ body.hidden {
 }
 
 @media(max-width: 546px) {
+	.text, .list {
+		font-size: 14px;
+	}
+
+	.link {
+		font-size: 14px;
+	}
+
 	.studios {
 		&__item {
 			margin-left: 0;
@@ -1618,6 +1634,27 @@ body.hidden {
 		&__box {
 			&-content {
 				padding: 16px;
+			}
+		}
+	}
+
+	.docs {
+		&__item {
+			&-num {
+				font-size: 14px;
+				margin-right: 5px;
+			}
+			&-name {
+				font-size: 14px;
+				padding-top: 7px;
+			}
+		}
+		&__list {
+			&-num {
+				min-width: 25px;
+				img {
+					width: 25px;
+				}
 			}
 		}
 	}

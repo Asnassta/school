@@ -1599,6 +1599,8 @@ body.hidden {
         margin-bottom: 0px; }
     .news__box {
       min-height: 300px; }
+  .docs__list li {
+    margin-bottom: 24px; }
   .vacancy__inner {
     display: block; }
   .vacancy__info {
@@ -1690,6 +1692,10 @@ body.hidden {
     margin-left: 0; } }
 
 @media (max-width: 546px) {
+  .text, .list {
+    font-size: 14px; }
+  .link {
+    font-size: 14px; }
   .studios__item {
     margin-left: 0; }
     .studios__item > * {
@@ -1713,6 +1719,16 @@ body.hidden {
         margin-bottom: 20px; }
     .news__box-content {
       padding: 16px; }
+  .docs__item-num {
+    font-size: 14px;
+    margin-right: 5px; }
+  .docs__item-name {
+    font-size: 14px;
+    padding-top: 7px; }
+  .docs__list-num {
+    min-width: 25px; }
+    .docs__list-num img {
+      width: 25px; }
   .vacancy__name {
     font-size: 14px; }
   .vacancy__num {
