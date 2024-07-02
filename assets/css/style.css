@@ -352,6 +352,7 @@
     z-index: 600;
     border-radius: 60px;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     background: rgba(149, 113, 213, 0.35); }
   .popup .closex {
     content: "";
@@ -904,6 +905,7 @@ body.hidden {
       border: 1px solid rgba(238, 238, 238, 0.2);
       border-radius: 16px;
       backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       background: rgba(19, 10, 36, 0.65); }
     .studios__box-info {
       margin-top: 16px;
@@ -970,7 +972,8 @@ body.hidden {
       padding: 90px 16px 29px;
       border-radius: 16px;
       border: 1px solid rgba(238, 238, 238, 0.2);
-      backdrop-filter: blur(30px);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       background: rgba(19, 10, 36, 0.65);
       display: flex;
       flex-direction: column;
@@ -1053,6 +1056,7 @@ body.hidden {
     border: 1px solid rgba(238, 238, 238, 0.2);
     border-radius: 70px;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     background: rgba(19, 10, 36, 0.65);
     width: 66%;
     position: relative;
@@ -1134,6 +1138,7 @@ body.hidden {
     border: 1px solid rgba(238, 238, 238, 0.2);
     border-radius: 70px;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     background: rgba(19, 10, 36, 0.65);
     width: 66%;
     position: relative;
@@ -1214,6 +1219,7 @@ body.hidden {
     .news__box_nophoto {
       background: rgba(19, 10, 36, 0.65);
       backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       border: 1px solid rgba(238, 238, 238, 0.2); }
       .news__box_nophoto .news__box-content {
         background: none; }
@@ -1445,6 +1451,7 @@ body.hidden {
       height: 100%;
       border-radius: 60px;
       backdrop-filter: blur(30px);
+      -webkit-backdrop-filter: blur(30px);
       background: rgba(19, 10, 36, 0.65);
       position: absolute;
       top: 0;
