@@ -1065,6 +1065,8 @@ body.hidden {
       font-size: 14px; }
   .info__text {
     margin-bottom: 32px; }
+    .info__text:last-child {
+      margin-bottom: 0; }
   .info__photo {
     width: 90.7%;
     position: absolute;
@@ -1692,8 +1694,11 @@ body.hidden {
     margin-left: 0; } }
 
 @media (max-width: 546px) {
-  .text, .list {
+  .text, .list, .list-smooth {
     font-size: 14px; }
+    .text .highlight, .list .highlight, .list-smooth .highlight {
+      font-size: 18px;
+      white-space: nowrap; }
   .link {
     font-size: 14px; }
   .studios__item {
@@ -1719,6 +1724,8 @@ body.hidden {
         margin-bottom: 20px; }
     .news__box-content {
       padding: 16px; }
+    .news__box-date {
+      font-size: 14px; }
   .docs__item-num {
     font-size: 14px;
     margin-right: 5px; }

@@ -748,6 +748,9 @@ body.hidden {
 	}
 	&__text {
 		margin-bottom: 32px;
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 	&__photo {
 		width: 90.7%;
@@ -1590,8 +1593,12 @@ body.hidden {
 }
 
 @media(max-width: 546px) {
-	.text, .list {
+	.text, .list, .list-smooth {
 		font-size: 14px;
+		.highlight {
+			font-size: 18px;
+			white-space: nowrap;
+		}
 	}
 
 	.link {
@@ -1634,6 +1641,9 @@ body.hidden {
 		&__box {
 			&-content {
 				padding: 16px;
+			}
+			&-date {
+				font-size: 14px;
 			}
 		}
 	}
