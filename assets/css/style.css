@@ -1961,6 +1961,8 @@ body.hidden {
     top: -35px; }
   .docs__item-download {
     display: none; }
+  .news__items {
+    margin-bottom: 30px; }
   .news__item {
     display: block; }
     .news__item-box {
