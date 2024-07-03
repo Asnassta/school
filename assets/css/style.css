@@ -1696,51 +1696,79 @@ body.hidden {
 
 /*==========/article============*/
 /*==========Contact=============*/
-.contact__inner {
-  display: flex;
-  align-items: flex-start; }
-
-.contact__info {
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: -80px;
-  margin-left: -20px;
-  margin-right: 20px; }
-
-.contact__item {
-  width: calc(50% - 20px);
-  margin-bottom: 80px;
-  margin-left: 20px; }
-
-.contact__description {
-  font-family: "Sansation", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #413850;
-  line-height: 1.5;
-  margin-bottom: 20px; }
-
-.contact__link {
-  font-family: "Sansation", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: #eeeeee;
-  line-height: 1.5; }
-
-.contact__text {
-  font-family: "Sansation", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #eeeeee;
-  line-height: 1.5; }
-
-.contact__map {
-  width: 50%;
-  border-radius: 22px;
-  overflow: hidden; }
-  .contact__map > * {
-    width: 100%; }
+.contact {
+  position: relative;
+  z-index: 1; }
+  .contact:before {
+    content: "";
+    width: 55.5vw;
+    height: 83.3vw;
+    max-width: 800px;
+    max-height: 1200px;
+    filter: blur(500px);
+    background: #a127a8;
+    opacity: 0.2;
+    border-radius: 100%;
+    pointer-events: none;
+    position: absolute;
+    top: 204px;
+    right: 0;
+    transform: translateX(50%);
+    z-index: -1; }
+  .contact:after {
+    content: "";
+    width: 125vw;
+    height: 69.4vw;
+    max-height: 1000px;
+    filter: blur(400px);
+    background: #030206;
+    opacity: 0.1;
+    border-radius: 100%;
+    pointer-events: none;
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    z-index: -1; }
+  .contact__inner {
+    display: flex;
+    align-items: flex-start; }
+  .contact__info {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -80px;
+    margin-left: -20px;
+    margin-right: 20px; }
+  .contact__item {
+    width: calc(50% - 20px);
+    margin-bottom: 80px;
+    margin-left: 20px; }
+  .contact__description {
+    font-family: "Sansation", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #413850;
+    line-height: 1.5;
+    margin-bottom: 20px; }
+  .contact__link {
+    font-family: "Sansation", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #eeeeee;
+    line-height: 1.5; }
+  .contact__text {
+    font-family: "Sansation", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #eeeeee;
+    line-height: 1.5; }
+  .contact__map {
+    width: 50%;
+    border-radius: 22px;
+    overflow: hidden; }
+    .contact__map > * {
+      width: 100%; }
 
 /*==========/contact=============*/
 /*==========Adaptive==============*/

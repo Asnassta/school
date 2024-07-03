@@ -1461,6 +1461,24 @@ body.hidden {
 
 /*==========Contact=============*/
 .contact {
+	position: relative;
+	z-index: 1;
+	&:before {
+		@include circle-purple;
+		position: absolute;
+		top: 204px;
+		right: 0;
+		transform: translateX(50%);
+		z-index: -1;
+	}
+	&:after {
+		@include circle-dark;
+		position: absolute;
+		bottom: -42px;
+		left: 50%;
+		transform: translate(-50%, 100%);
+		z-index: -1;
+	}
 	&__inner {
 		display: flex;
 		align-items: flex-start;
