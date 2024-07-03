@@ -686,10 +686,11 @@ body.hidden {
     background: url("../images/dots.svg") top center no-repeat;
     background-size: contain;
     position: absolute;
-    top: 0;
+    top: -55px;
     left: 30%;
     z-index: -1;
-    transform: translateX(-100%); }
+    transform: translateX(-100%);
+    pointer-events: none; }
 
 /*============Intro=============*/
 .intro {
@@ -1597,7 +1598,7 @@ body.hidden {
       max-width: 100%; }
 
 /*=========/about=================*/
-/*=========Article================*/
+/*===========Article============*/
 .article {
   position: relative;
   z-index: 1; }
@@ -1638,8 +1639,6 @@ body.hidden {
     margin-bottom: 50px; }
     .article__block:last-child {
       margin-bottom: 0; }
-    .article__block.dots:after {
-      top: -60px; }
     .article__block_reverse {
       flex-direction: row-reverse; }
   .article__info {
@@ -1695,7 +1694,55 @@ body.hidden {
       .article__video-icon img {
         max-width: 100%; }
 
-/*========/article================*/
+/*==========/article============*/
+/*==========Contact=============*/
+.contact__inner {
+  display: flex;
+  align-items: flex-start; }
+
+.contact__info {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -80px;
+  margin-left: -20px;
+  margin-right: 20px; }
+
+.contact__item {
+  width: calc(50% - 20px);
+  margin-bottom: 80px;
+  margin-left: 20px; }
+
+.contact__description {
+  font-family: "Sansation", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #413850;
+  line-height: 1.5;
+  margin-bottom: 20px; }
+
+.contact__link {
+  font-family: "Sansation", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #eeeeee;
+  line-height: 1.5; }
+
+.contact__text {
+  font-family: "Sansation", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #eeeeee;
+  line-height: 1.5; }
+
+.contact__map {
+  width: 50%;
+  border-radius: 22px;
+  overflow: hidden; }
+  .contact__map > * {
+    width: 100%; }
+
+/*==========/contact=============*/
 /*==========Adaptive==============*/
 @media (max-width: 1440px) {
   .intro__title img {
@@ -1812,7 +1859,19 @@ body.hidden {
   .vacancy__contact {
     width: 100%; }
     .vacancy__contact .text {
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+  .contact__inner {
+    display: block; }
+  .contact__info {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0; }
+  .contact__item {
+    margin-bottom: 30px; }
+  .contact__description {
+    margin-bottom: 10px; }
+  .contact__map {
+    width: 100%; } }
 
 @media (max-width: 765px) {
   .dots:after {
@@ -1962,7 +2021,15 @@ body.hidden {
     margin-left: 0; }
     .form__inner > * {
       width: 100%;
-      margin-left: 0; } }
+      margin-left: 0; }
+  .contact__link {
+    font-size: 14px; }
+  .contact__description {
+    font-size: 14px; }
+  .contact__text {
+    font-size: 14px; }
+  .contact__item:nth-child(4) {
+    width: 100%; } }
 
 @media (max-width: 376px) {
   .intro__row {
